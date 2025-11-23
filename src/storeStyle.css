@@ -1,0 +1,413 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --paraCol: #352f2f;
+  --ButtonCol: #e2a5a5;
+  --bg-color: rgb(255, 245, 245);
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+}
+
+.header {
+	border: 1px solid #F0F0F0;
+	background-color: white;
+}
+
+.navbar {
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+	font-size: 1.5rem;
+}
+
+.cart-icon {
+	transform: rotateY(180deg);
+	font-size: 35px;
+	color: #7E7065;
+}
+
+.back-icon {
+	font-size: 35px;
+	color: #7E7065;
+}
+
+.main-div {
+	border: 1px solid #D0BDBE ;
+	height: auto;
+}
+
+.aside-div {
+	height: fit-content;
+	padding: 8px 0;
+}
+
+.aside-div {
+  width: 100%;
+  overflow-x: auto; 
+  white-space: nowrap;
+  padding: 12px 0;
+  scrollbar-width: none; 
+}
+
+.aside-div::-webkit-scrollbar {
+  display: none; 
+}
+
+.aside-div ul {
+  display: inline-flex;
+  gap: 10px;
+  padding: 4px 8px;
+}
+
+.aside-div ul li {
+  list-style: none;
+  background-color: #EEDBDD;
+  color: #6E2A2A;
+  font-weight: 500;
+  text-align: center;
+  padding: 6px 15px;
+  border-radius: 999px; 
+  user-select: none;
+  flex-shrink: 0; 
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.aside-div ul li.active {
+  background-color: transparent;
+  border: 1px solid #6E2A2A;
+  user-select: none;
+}
+
+
+.store {
+	height: auto;
+	background-color: transparent;
+	border: 2px solid #D0BDBE;
+}
+
+.category-section {
+  margin-bottom: 60px;
+  padding: 17px 0 0 0;
+}
+
+.category-header {
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.category-header h2 {
+  font-size: 28px;
+  color: #e67a7a;
+  margin-bottom: 10px;
+}
+
+.category-header p {
+  font-size: 15px;
+  color: #666;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.product-card {
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+	transform: scale(1.02);
+}
+
+.product-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  padding: 6px;
+  font-size: 14px;
+  color: #5a3e36;
+  text-align: start;
+}
+
+.card-i-wrap {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 8px 6px 8px;
+}
+
+.i-txt {
+	font-size: 14px;
+}
+
+.ratings {
+	color: #66A872;
+}
+
+.price {
+	color: #5a3e36;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+footer {
+  width: 100%;
+  height: 70vh;
+  background-color: #f7c7c79c;
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://wallpapercave.com/wp/wp10604000.jpg) no-repeat center center/cover;
+  opacity: 0.5;
+  filter: blur(4px);
+  z-index: 1;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 3;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.footer-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  color: #d66868;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-section p {
+  color: var(--paraCol);
+  line-height: 1.6;
+  font-size: 0.99rem;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  color: var(--paraCol);
+  font-size: 18px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul a {
+  color: var(--paraCol);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.footer-section ul a:hover {
+  color: #d66868;
+}
+
+.newsletter-form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 8px 12px;
+  border: 2px solid #ffe5e5;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  background-color: white;
+  transition: border-color 0.3s ease;
+}
+
+.newsletter-form input::placeholder {
+  text-align: center;
+}
+
+.newsletter-form input:focus {
+  outline: none;
+  border-color: #ff8fab;
+}
+
+.newsletter-form button {
+  padding: 12px 25px;
+  background-color: var(--ButtonCol);
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.newsletter-form button:hover {
+  background-color: #d66868;
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  border-top: 1px solid #ffe5e5;
+  text-align: center;
+}
+
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  color: var(--paraCol);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #d66868;
+}
+
+.footer-legal {
+  color: var(--paraCol);
+  font-size: 0.85rem;
+}
+
+.footer-legal a {
+  color: var(--paraCol);
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: #d66868;
+}
+
+.footer-legal p {
+  margin-top: 15px;
+}
+
+/*media query for mobile phones*/
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+	
+  footer {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .footer-content {
+    padding: 20px 0;
+  }
+
+  .footer-sections {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .footer-section p {
+    font-size: 0.9rem;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+  }
+
+  .footer-section ul a {
+    font-size: 0.9rem;
+  }
+
+  .newsletter-form {
+    max-width: 300px;
+    margin: 15px auto 0;
+  }
+
+  .newsletter-form input {
+    font-size: 0.85rem;
+  }
+
+  .newsletter-form button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom {
+    padding-top: 20px;
+  }
+
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-links a {
+    font-size: 0.85rem;
+    margin: 5px;
+  }
+
+  .footer-legal {
+    font-size: 0.8rem;
+  }
+
+  .footer-legal a {
+    display: inline-block;
+    margin: 5px;
+  }
+}

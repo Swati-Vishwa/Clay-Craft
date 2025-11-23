@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet" />	
+  <link rel="stylesheet" href="./src/cartStyle.css" />	
+  <title>Store</title>
+</head>
+<body>
+
+  <div class="container">
+  	
+    <header class="header nav-head">
+      <nav class="navbar nav">
+        <a href="store.html"><i class='bx bx-arrow-back back-icon'></i></a>
+        <a href="cart.html">
+          <i class='bx bx-cart cart-icon'>
+            <div class="crt-notif"></div>
+          </i>
+        </a>
+      </nav>
+    </header>
+      
+    <!--Main section-->  
+    <section class="main main-sec">
+      <div class="card-container" id="cartContainer"></div>
+    </section>
+
+     
+    <!--Footer--> 
+    <footer>
+      <div class="footer-content">
+        
+        <div class="footer-sections">
+          
+          <div class="footer-section">
+            <h3>Clay Charm Studio</h3>
+            <p>Creating adorable custom clay charms that bring smiles to faces. Each piece is handcrafted with love and attention to detail.</p>
+            <div class="contact-info">
+              <p>contact@claycharmstudio.com</p>
+              <p>(555) 123-4567</p>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="#">Custom Orders</a></li>
+              <li><a href="#">Shop Ready-Made</a></li>
+              <li><a href="#">Design Gallery</a></li>
+              <li><a href="#">Care Instructions</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Customer Care</h3>
+            <ul>
+              <li><a href="#">Shipping Info</a></li>
+              <li><a href="#">Returns Policy</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Stay Connected</h3>
+            <p>Join our mailing list for cute updates and special offers!</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Pinterest">Pinterest</a>
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Youtube">Youtube</a>
+          </div>
+
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <p>© 2024 Clay Charm Studio. All rights reserved.</p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+      
+  </div>
+  
+  <script src="./src/Products.js"></script>
+  <script src="./src/cartScript.js"></script>
+
+</body>
+</html>
