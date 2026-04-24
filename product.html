@@ -1,173 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet" />	
-  <link rel="stylesheet" href="./src/productStyle.css" />	
-  <title>Store</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/productStyle.css" />
+  <title>Clay-Craft Store</title>
 </head>
+
 <body>
-	<div class="container">
-  	
-  	<header class="header nav-head">
-  	  <nav class="navbar nav">
-  	      <a href="store.html"><i class='bx bx-arrow-back back-icon'></i></a>
-            <a href="cart.html" class="cart-style"><i class='bx bx-cart cart-icon'><div class="crt-notif"></div></i></a>
-        </nav>
-      </header>
-      
-      <section class="main-div content-div">
-      	<main class="card-container">
-      	  <!--Card-->
-      	  <div class="card">
-      	    <div class="card-detail">
-              	<span class="crd-brand">ClayCraft</span>
-                  <div class="crd-rating">
-                    <span id="rating" class="rating-txt"></span>
-                    <span><i class='bx bxs-star ratings'></i></span>
-                  </div>
+  <div class="container">
+
+    <header class="header nav-head">
+      <nav class="navbar nav">
+        <a href="store.html"><i class='bx bx-arrow-back back-icon'></i></a>
+        <a href="cart.html" class="cart-style"><i class='bx bx-cart cart-icon'>
+            <div class="crt-notif"></div>
+          </i></a>
+      </nav>
+    </header>
+
+    <section class="main-div content-div">
+      <main class="card-container">
+        <div class="card">
+          <div class="crd-img-cont">
+            <img id="cardImg" class="crd-img" src="your-image.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="product-details-right">
+          <div class="card-detail">
+            <span class="crd-brand">ClayCraft</span>
+            <div class="crd-rating">
+              <span id="rating" class="rating-txt">4.5</span>
+              <span><i class='bx bxs-star ratings'></i></span>
+            </div>
+          </div>
+
+          <h1 id="crdName" class="crd-name" style="font-size: 2rem;">Product Name</h1>
+          <div id="description" class="crd-des">Product description goes here...</div>
+          <div id="price" class="crd-p">$29.99</div>
+
+          <div class="facility">
+            <div class="return"><i class="bx bx-refresh"></i>
+              <p>7 days return</p>
+            </div>
+            <div class="delivery"><i class="bx bxs-truck"></i>
+              <p>Free delivery</p>
+            </div>
+            <div class="transaction"><i class="bx bxs-lock"></i>
+              <p>Secured</p>
+            </div>
+          </div>
+
+          <div class="crd-btn-cont">
+            <button id="addToCart" class="crd-btn">Add to Cart</button>
+            <button class="crd-buy-btn">Buy now</button>
+          </div>
+        </div>
+      </main>
+
+      <!--Review section-->
+      <section class="review">
+        <h1>Customer Reviews<i class='bx bxs-star ratings'></i></h1>
+        <main class="review-cont">
+          <div class="review-boxes">
+
+            <div class="rev-card">
+              <div class="rev-name">
+                <div class="avatar"></div>
+                <div class="avatar-name">
+                  <h3>Lorem ipsum dolor</h3>
+                  <div>⭐⭐⭐⭐⭐</div>
+                </div>
               </div>
-      	    <div class="crd-img-cont">
-                <img id="cardImg" class="crd-img" src="" alt=""/>
-              </div>  
-              <div id="crdName" class="crd-name"></div>
-      	    <div id="description" class="crd-des"></div>
-              <div id="price" class="crd-p"></div>
+              <p class="rev-para">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum, massa ut cursus eleifend
+                Lorem ipsum dolor sit amet.
+              </p>
             </div>
-            
-            <div class="facility">
-            	<div class="return"><i class="bx bx-refresh"></i><p>7 days return/exchange</p></div> 
-            	<div class="delivery"><i class="bx bxs-truck"></i><p>Free delivery</p></div>
-                <div class="transaction"><i class="bx bxs-lock"></i><p>Secured transaction</p></div>
-            </div>
-            
-            <!--card buttons-->
-            <div class="crd-btn-cont">
-          	<button id="addToCart" class="crd-btn">Add to Cart</button>
-              <button class="crd-buy-btn">Buy now</button>
-            </div>
-            
-          </main>
-          
-          <!--Review section-->
-          <section class="review">
-            <h1>Customer Reviews<i class='bx bxs-star ratings'></i></h1>	
-            <main class="review-cont">
-              <div class="review-boxes">
-              	
-              	<div class="rev-card">
-              	  <div class="rev-name">
-              	    <div class="avatar"></div>
-                      <div class="avatar-name">
-                        <h3>Lorem ipsum dolor</h3>	
-                        <div>⭐⭐⭐⭐⭐</div>
-                      </div>
-                    </div>
-                    <p class="rev-para">
-                    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum, massa ut cursus eleifend Lorem ipsum dolor sit amet.
-                    </p>
-                  </div>
-                  
-                  <div class="rev-card">
-              	  <div class="rev-name">
-              	    <div class="avatar"></div>
-                      <div class="avatar-name">
-                        <h3>Lorem ipsum dolor</h3>	
-                        <div>⭐⭐⭐⭐⭐</div>
-                      </div>
-                    </div>
-                    <p class="rev-para">
-                    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum, massa ut cursus eleifend Lorem ipsum dolor sit amet Curabitur vestibulum, massa ut cursus eleifend Lorem ipsum dolor sit amet .
-                    </p>
-                  </div>
-                  
-                  <div class="rev-card">
-              	  <div class="rev-name">
-              	    <div class="avatar"></div>
-                      <div class="avatar-name">
-                        <h3>Lorem ipsum dolor</h3>	
-                        <div>⭐⭐⭐⭐⭐</div>
-                      </div>
-                    </div>
-                    <p class="rev-para">
-                    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum, massa ut cursus eleifend Lorem ipsum dolor sit amet.
-                    </p>
-                  </div>
-                  
+
+            <div class="rev-card">
+              <div class="rev-name">
+                <div class="avatar"></div>
+                <div class="avatar-name">
+                  <h3>Lorem ipsum dolor</h3>
+                  <div>⭐⭐⭐⭐⭐</div>
+                </div>
               </div>
-            </main>
-          </section> 
+              <p class="rev-para">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum, massa ut cursus eleifend
+                Lorem ipsum dolor sit amet Curabitur vestibulum, massa ut cursus eleifend Lorem ipsum dolor sit amet .
+              </p>
+            </div>
+
+            <div class="rev-card">
+              <div class="rev-name">
+                <div class="avatar"></div>
+                <div class="avatar-name">
+                  <h3>Lorem ipsum dolor</h3>
+                  <div>⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+              <p class="rev-para">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum, massa ut cursus eleifend
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+
+          </div>
+        </main>
       </section>
-      
-      <footer>
-    <div class="footer-content">
+    </section>
+
+    <footer>
+      <div class="footer-content">
         <!-- Main Footer Sections -->
         <div class="footer-sections">
-            <!-- About Section -->
-            <div class="footer-section">
-                <h3>Clay Charm Studio</h3>
-                <p>Creating adorable custom clay charms that bring smiles to faces. Each piece is handcrafted with love and attention to detail.</p>
-                <div class="contact-info">
-                    <p> contact@claycharmstudio.com</p>
-                    <p> (555) 123-4567</p>
-                </div>
+          <!-- About Section -->
+          <div class="footer-section">
+            <h3>Clay Charm Studio</h3>
+            <p>Creating adorable custom clay charms that bring smiles to faces. Each piece is handcrafted with love and
+              attention to detail.</p>
+            <div class="contact-info">
+              <p> contact@claycharmstudio.com</p>
+              <p> (555) 123-4567</p>
             </div>
+          </div>
 
-            <!-- Quick Links -->
-            <div class="footer-section">
-                <h3>Explore</h3>
-                <ul>
-                    <li><a href="#">Custom Orders</a></li>
-                    <li><a href="#">Shop Ready-Made</a></li>
-                    <li><a href="#">Design Gallery</a></li>
-                    <li><a href="#">Care Instructions</a></li>
-                    <li><a href="#">FAQs</a></li>
-                </ul>
-            </div>
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="#">Custom Orders</a></li>
+              <li><a href="#">Shop Ready-Made</a></li>
+              <li><a href="#">Design Gallery</a></li>
+              <li><a href="#">Care Instructions</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
 
-            <!-- Customer Care -->
-            <div class="footer-section">
-                <h3>Customer Care</h3>
-                <ul>
-                    <li><a href="#">Shipping Info</a></li>
-                    <li><a href="#">Returns Policy</a></li>
-                    <li><a href="#">Track Order</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
+          <!-- Customer Care -->
+          <div class="footer-section">
+            <h3>Customer Care</h3>
+            <ul>
+              <li><a href="#">Shipping Info</a></li>
+              <li><a href="#">Returns Policy</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
 
-            <!-- Newsletter -->
-            <div class="footer-section">
-                <h3>Stay Connected</h3>
-                <p>Join our mailing list for cute updates and special offers!</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address">
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
+          <!-- Newsletter -->
+          <div class="footer-section">
+            <h3>Stay Connected</h3>
+            <p>Join our mailing list for cute updates and special offers!</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
         </div>
 
         <!-- Social Media & Copyright -->
         <div class="footer-bottom">
-            <div class="social-links">
-                <a href="#" aria-label="Instagram">Instagram</a>
-                <a href="#" aria-label="Pinterest">Pinterest</a>
-                <a href="#" aria-label="Facebook">Facebook</a>
-                <a href="#" aria-label="Youtube">Youtube</a>
-            </div>
-            <div class="footer-legal">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <p>© 2024 Clay Charm Studio. All rights reserved.</p>
-            </div>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Pinterest">Pinterest</a>
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Youtube">Youtube</a>
+          </div>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <p>© 2024 Clay Charm Studio. All rights reserved.</p>
+          </div>
         </div>
-    </div>
-</footer>
-      
+      </div>
+    </footer>
+
   </div>
-  
+
   <script src="./src/Products.js"></script>
   <script src="./src/productScript.js"></script>
 </body>
+
 </html>

@@ -264,7 +264,7 @@ body::before {
 .carousal-menu-contaienr {
   position: relative;
   z-index: 20;
-  left: 73%;
+  left: 70%;
   bottom: 30%;
   display: flex;
   justify-content: center;
